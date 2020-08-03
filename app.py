@@ -40,4 +40,4 @@ def submits_form():
     if request.method =='POST':
         data = request.form.to_dict()
         write_to_file(data)
-    return "submitteed"
+    return render_template("thanks.html")
